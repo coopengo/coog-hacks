@@ -1,0 +1,19 @@
+{
+  "name": "coog-rest-example",
+  "version": "0.0.1",
+  "scripts": {
+    "beautify": "js-beautify --config .jsbeautifyrc -r *.js",
+    "lint": "jshint -c .jshintrc *.js",
+    "client-rpc": "node ./client-rpc",
+    "server-rest": "node ./server-rest.js",
+    "client-rest": "./client-rest"
+  },
+  "dependencies": {
+    "co": "^4.6.0",
+    "koa": "^1.2.4",
+    "koa-bodyparser": "^2.3.0",
+    "lodash": "^4.17.2",
+    "tryton-model": "~4.0.11",
+    "tryton-session": "~4.0.8"
+  }
+}
