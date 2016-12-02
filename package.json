@@ -1,6 +1,11 @@
 {
   "name": "coog-rest-example",
   "version": "0.0.1",
+  "license": "GPL-3.0+",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/coopengo/coog-rest-example.git"
+  },
   "scripts": {
     "beautify": "js-beautify --config .jsbeautifyrc -r *.js",
     "lint": "jshint -c .jshintrc *.js",
