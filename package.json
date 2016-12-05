@@ -1,5 +1,5 @@
 {
-  "name": "coog-rest-example",
+  "name": "coog-hacks",
   "version": "0.0.1",
   "license": "GPL-3.0+",
   "repository": {
@@ -8,16 +8,14 @@
   },
   "scripts": {
     "beautify": "js-beautify --config .jsbeautifyrc -r *.js",
-    "lint": "jshint -c .jshintrc *.js",
-    "client-rpc": "node ./client-rpc",
-    "server-rest": "node ./server-rest.js",
-    "client-rest": "./client-rest"
+    "lint": "jshint -c .jshintrc *.js"
   },
   "dependencies": {
     "co": "^4.6.0",
     "koa": "^1.2.4",
     "koa-bodyparser": "^2.3.0",
     "lodash": "^4.17.2",
+    "sprintf-js": "^1.0.3",
     "tryton-model": "~4.0.11",
     "tryton-session": "~4.0.8"
   }

@@ -1,23 +1,36 @@
-## Coog REST Example
+## Coog Hacks
 
-Some example scripts to:
+This is a kind of index of useful scripts to interact with Coog.
 
-- Query coog / tryton server via RPC interface
-- Launch a REST server to expose business service (example)
-- Query the REST server (curl)
+Examples are based on:
+
+- [tryton-session](https://github.com/coopengo/tryton-session)
+- [tryton-session-llt](https://github.com/coopengo/tryton-session-llt)
+- [tryton-model](https://github.com/coopengo/tryton-model)
+
+**Please keep in mind that these are just examples to make it easy to start an interface**
 
 ### Usage
 
-- `npm i`
-- `npm run client-rpc`
-- `npm run server-rest`
-- `npm run client-rest`
+```
+- npm i
+- node <script-name>
+```
 
-Theses scripts are **just examples**, they could be helpful to start mounting
-REST services based on coog / tryton on Nodejs
+Please note that:
+
+- Server URL, DB, USERNAME and PASSWORD could be set from environment variables
+    - `COOG_URL`, `COOG_DB`, `COOG_USERNAME`, `COOG_PASSWORD`
+    - Example: `COOG_URL=http://myserver.local:8000 node <script-name>`
+
+- To log internal actions, you can activate debug on nodejs client libs
+    - `DEBUG=tryton:session:* node <script-name>`
+
+    ![rpc](png/rpc.png "RPC example")
+
+- To debug scripts execution, you can use [node inspector](https://github.com/node-inspector/node-inspector)
 
 ### Examples
 
-![rpc](png/rpc.png "RPC example")
-
-![rest](png/rest.png "REST example")
+- Expose a REST API based on Coog: [server](./rest-server.js) and [client](./rest-client)
+- Generate a loans report: [script](./loan-report.js)
