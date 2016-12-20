@@ -14,9 +14,13 @@ co(function* () {
     var tables = yield model.Group.search(session, 'table', {
       domain: ['name', 'ilike', '%nucléaire%']
     });
-    // read all searched results (search only retrieve ids)
-    yield tables.read();
-    // print records as JSON
-    tables.each((t) => console.log(t.toJSON()));
+    // read table
+    var table = tables.head();
+    yield table.read();
+    // read cells
+    var cells = yield table.get('cells');
+    yield cells.read();
+    // print table
+    console.log(table.toJSON());
   })
   .then(null, console.error);
