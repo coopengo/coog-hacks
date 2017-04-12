@@ -37,5 +37,7 @@ app.use(function* () {
 });
 //
 // start server after session starts
-session.start(config.USERNAME, config.PASSWORD)
+session.start(config.USERNAME, {
+    password: config.PASSWORD
+  })
   .then(app.listen(3000), console.error);

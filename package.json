@@ -11,12 +11,12 @@
     "lint": "jshint -c .jshintrc *.js"
   },
   "dependencies": {
-    "co": "^4.6.0",
-    "koa": "^1.2.4",
-    "koa-bodyparser": "^2.3.0",
-    "lodash": "^4.17.2",
-    "sprintf-js": "^1.0.3",
-    "tryton-model": "~4.0.11",
-    "tryton-session": "~4.0.8"
+    "co": "^4",
+    "koa": "^1",
+    "koa-bodyparser": "^2",
+    "lodash": "^4",
+    "sprintf-js": "^1",
+    "tryton-model": "~4.2",
+    "tryton-session": "~4.2"
   }
 }
