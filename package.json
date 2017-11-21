@@ -11,11 +11,13 @@
     "lint": "jshint -c .jshintrc *.js"
   },
   "dependencies": {
+    "axios": "^0.17.1",
     "co": "^4",
     "koa": "^1",
     "koa-bodyparser": "^2",
     "lodash": "^4",
     "sprintf-js": "^1",
+    "superagent": "^3.8.1",
     "tryton-model": "~4.2",
     "tryton-session": "~4.2"
   }
