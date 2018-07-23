@@ -33,4 +33,4 @@ Please note that:
 ### Examples
 
 - Expose a REST API based on Coog: [server](./rest-server.js) and [client](./rest-client)
-- Generate a loans report: [script](./loan-report.js)
+- Generate a loans report: [script](./report.js)
