@@ -11,7 +11,7 @@
     "lint": "jshint -c .jshintrc *.js"
   },
   "dependencies": {
-    "axios": "^0.17.1",
+    "axios": "^0.21.1",
     "co": "^4",
     "koa": "^1",
     "koa-bodyparser": "^2",
