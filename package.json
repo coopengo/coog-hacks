@@ -19,6 +19,6 @@
     "sprintf-js": "^1",
     "superagent": "^3.8.1",
     "tryton-model": "~4.2",
-    "tryton-session": "~4.2"
+    "tryton-session": "~4.8.1"
   }
 }
